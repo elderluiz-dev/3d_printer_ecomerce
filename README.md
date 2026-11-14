@@ -1,8 +1,8 @@
-# 3D Priner Ecomerce
+# 3D Printer E-commerce
 
-A 3D Printer Ecomerce é um ecomerce online feito em HTML5, CSS3 e JavaScript como avaliação parcial da diciplina de Interface Homem Máquia do curso de Tecologia em Análise e Desenvolvimento de Sistemas do IFBAIANO - Campus Guanambi
+A 3D Printer E-commerce é um e-commerce online feito em HTML5, CSS3 e JavaScript como avaliação parcial da disciplina de Interface Homem Máquina do curso de Tecnologia em Análise e Desenvolvimento de Sistemas do IFBAIANO - Campus Guanambi
 
-## Estrutua
+## Estrutura
 
 O projeto é divido em 5 telas, sendo: Home, produto, pesquisa, carrinho e checkout. Cada tela pode ser acessada diretamente na navegação do site, simulando um site real de ecomerce:
 ```
