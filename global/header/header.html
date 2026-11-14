@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        
+        <a href="/" class="app-header__icon-btn" aria-label="Início">
+            <img src="assets/home.png" alt="" width="38" height="38">
+        </a>
+        
+        <form class="app-header__search" action="/buscar" method="get">
+            <input
+                type="text"
+                name="q"
+                class="app-header__search-input"
+                placeholder="PESQUISAR"
+                aria-label="Pesquisar"
+            />
+
+            <button type="submit" class="app-header__search-btn" aria-label="Buscar">
+                <img src="assets/search.png" alt="" width="24" height="24">
+            </button>
+        </form>
+        
+        <div class="app-header__actions">
+
+            <a href="/carrinho" class="app-header__icon-btn" aria-label="Carrinho">
+                <img src="assets/cart.png" alt="" width="34" height="34">
+            </a>
+
+            <a href="/perfil" class="app-header__avatar" aria-label="Perfil do usuário">
+                <img src="assets/user.png" alt="" width="48" height="48">
+            </a>
+
+        </div>
+    </header>
+</body>
+</html>
