@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoração para Quarto Minimalista - Toyan Decor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+
+        <a href="/" class="app-header__icon-btn" aria-label="Início">
+            <img src="assets/header/home.png" alt="" width="38" height="38">
+        </a>
+
+        <form class="app-header__search" action="/buscar" method="get">
+            <input
+                type="text"
+                name="q"
+                class="app-header__search-input"
+                placeholder="PESQUISAR"
+                aria-label="Pesquisar"
+            />
+
+            <button type="submit" class="app-header__search-btn" aria-label="Buscar">
+                <img src="assets/header/search.png" alt="" width="24" height="24">
+            </button>
+        </form>
+
+        <div class="app-header__actions">
+
+            <a href="/carrinho" class="app-header__icon-btn" aria-label="Carrinho">
+                <img src="assets/header/cart.png" alt="" width="34" height="34">
+            </a>
+
+            <a href="/perfil" class="app-header__avatar" aria-label="Perfil do usuário">
+                <img src="assets/header/user.png" alt="" width="48" height="48">
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="product-showcase">
+            <div class="product-container">
+                <div class="product-layout">
+
+                    <div class="product-thumbnails">
+                        <button class="thumbnail active" type="button">
+                            <img
+                                src="assets/product/preview1.png"
+                                alt="Miniatura 1 - Vaso Facetado"
+                            >
+                        </button>
+
+                        <button class="thumbnail" type="button">
+                            <img
+                                src="assets/product/preview2.png"
+                                alt="Miniatura 2 - Vaso Facetado"
+                            >
+                        </button>
+
+                        <button class="thumbnail" type="button">
+                            <img
+                                src="assets/product/preview3.png"
+                                alt="Miniatura 3 - Vaso Facetado"
+                            >
+                        </button>
+
+                        <button class="thumbnail" type="button">
+                            <img
+                                src="assets/product/preview4.png"
+                                alt="Miniatura 4 - Vaso Facetado"
+                            >
+                        </button>
+                    </div>
+
+                    <div class="product-image">
+                        <img
+                            src="assets/product/main_photo.png"
+                            alt="Vaso Decorativo Geométrico Branco Minimalista 3D"
+                        >
+                    </div>
+
+                    <aside class="product-details">
+                        <div>
+                            <h1>Decoração Para Quarto Minimalista</h1>
+
+                            <div class="product-link">
+                                <a href="#descricao">
+                                    lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </a>
+                            </div>
+
+                            <div class="product-summary">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="purchase-info">
+                            <div class="product-price">R$ 65,00</div>
+
+                            <div class="product-vendor">
+                                Vendido por:
+                                <strong>Toyan Decor</strong>
+                            </div>
+
+                            <div class="purchase-buttons">
+                                <button class="buy-button" type="button">
+                                    Comprar Agora
+                                </button>
+
+                                <button class="cart-button" type="button">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="product-description" id="descricao">
+            <div class="description-container">
+                <h2>Descrição do Produto</h2>
+
+                <div class="description-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                        quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        <strong>sit aspernatur aut odit aut fugit, sed</strong> quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                        sit amet, consectetur,
+                        <strong>adipisci velit, sed quia non</strong> numquam eius modi
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem
+                        ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                        consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                        voluptate velit esse quam nihil molestiae consequatur, vel illum
+                        qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="related-container">
+                <h2>Mais Produtos</h2>
+
+                <div class="products-grid">
+
+                    <a class="product-card" href="#">
+                        <div class="card-image">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ZPl48Rs30nfUlZ3WLPeilaoq3x8htJuNhYFgZAKy24I_zMaNi0-AIKE4NLPOdK6RaZcs1GV7ra13sz5ihgouIIfcnB8YVydtIkKzbwtzYEvrRGdfBKOVXRO2iVlEg9kkyrv-KEpNwxJzfeAHoFQUoQ_HKgK_xEj6y4kN_RgP4oCdznEwZrEbJ3TRa4d4N3rCZbU_TtInwjOZr3QU2QZfzsqkZ5fDBwMbBFWt_e9Y"
+                                alt="Dragão Multifaces impresso em 3D"
+                            >
+                        </div>
+
+                        <div class="card-overlay">
+                            <p>Dragão Multifaces</p>
+
+                            <div class="card-info">
+                                <span>R$ 75,00</span>
+                                <span>⭐ 5.0</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card" href="#">
+                        <div class="card-image">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4dSpuq6zGo18FmVb1Vuqx7bZufoKdOd97-imY3SSQLDGWaESQdd4PR_U7F65uHaEP5lFu1bIu7Pn7NMWeIbERgrZfdUbUnIr66ljpI1sWnbUqB9bwKprxjoAKJNDIsIp21XV9U5VIP71uoydtatDfFzHkMp8ZEYE5QI-qvw8kfaEiNZgKvmeSDxx3xf04lnBxHC1Fn7VhwJgkmH966h0smGrZeqFhRtg9W4GULXkn"
+                                alt="Capa geométrica com padrão colorido"
+                            >
+                        </div>
+
+                        <div class="card-overlay">
+                            <p>Capa Geome</p>
+
+                            <div class="card-info">
+                                <span>R$ 35,00</span>
+                                <span>⭐ 4.8</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card" href="#">
+                        <div class="card-image">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA77LoA99O_MZN0LolgzYpIvCnpEbL7cURyRwg-Q441iybBkRXlMQ-2IjO6JhA_yLjSSoFfihx4ueOfERQYOUvOYjlr2xkX0pa9xFcDoYPX6gIodQRkJE8hXtr7-K0ygU9mIlTNo8LsZZTzXDt7fb926RUgYH4S2URB5Vy3_cGueZeeN8cvAs3OnsJLE0B_qp_vjfObVJM-wLVnLCig3BxidfEYWTRcGOBladGz0b8g"
+                                alt="Cubo de engrenagens mecânicas impressas"
+                            >
+                        </div>
+
+                        <div class="card-overlay">
+                            <p>Cubo Engr. Mecânica</p>
+
+                            <div class="card-info">
+                                <span>R$ 95,00</span>
+                                <span>⭐ 4.9</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card" href="#">
+                        <div class="card-image">
+                            <img
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-hFcjKJ5Uc91c43Shj4xN1S9SiOcsFObFdNR2dEpzkB0OtjsupyPkrCmatEKupLUS8-FRRq5XWaOocEIPZjJ_8vLnl_iBLVzI7SeTdC2Z4wwIfU6nlNMSTLOl7tGpjt86gqaS53xjPQDDxvjITiAMKb_ezJfAcU-IzTFJVDGocANzqYp5qJAX8RCgRfB5ucGZ9NwEgkgG6-V1m86BNm02-LKp-0DKoA5eksWhPhmN"
+                                alt="Modelo arquitetônico de maquete moderna"
+                            >
+                        </div>
+
+                        <div class="card-overlay">
+                            <p>Modelo Arquitetônico</p>
+
+                            <div class="card-info">
+                                <span>R$ 120,00</span>
+                                <span>⭐ 4.7</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
