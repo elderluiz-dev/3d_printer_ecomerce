@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background:
+    linear-gradient(to bottom, var(--cor-principal) 0%, transparent 35%) top /
+      100% 180px no-repeat,
+    linear-gradient(to top, var(--cor-principal) 0%, transparent 35%) bottom /
+      100% 180px no-repeat #ffffff;
+
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --cor-principal: #85e6c0;
+  --cor-secundário: #ffffffc0;
+  --cor-terciária: #000000;
+  --cor-avaliação: #fbbf24;
+  --cor-cinza: #969393;
+}
+.filter {
+  background-color: var(--cor-secundário);
+  box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.462);
+  height: 170px;
+  width: 210px;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition: transform 0.5s;
+}
+.filter :hover{
+  transform: scale(1.0);
+  transition: 0.8s;
+}
+h2 {
+  color: var(--cor-terciária);
+  font-size: small;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  border-bottom: 0.5px solid gray;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  font-style: oblique;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 86px;
+  left: 0px;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to bottom, var(--cor-principal), transparent);
+  filter: blur(35px);
+  opacity: 0.6;
+  z-index: -1;
+  pointer-events: none;
+}
+p {
+  margin-top: 2px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 4px;
+  display: block;
+  background-color: #9693935b;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.card {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  isolation: isolate;
+  transition: transform 0.8s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -40px -5px -40px -5px;
+  background-color: var(--cor-principal);
+  filter: blur(10px);
+  border-radius: 10px;
+  z-index: -1;
+}
+.card:hover{
+  transform: scale(1.04);
+  transition: 0.8s;
+}
+.card h3 {
+  position: relative;
+  z-index: 1;
+  color: var(--cor-terciária);
+  font-family: "Inter", sans-serif;
+  margin: 10px;
+  font-size: 14px;
+}
+.avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+.avaliacao p {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background: transparent;
+}
+.preço {
+  font-size: 16px;
+  font-weight: 900;
+  background: transparent;
+  margin: 5px 10px;
+  padding: 0;
+  align-self: flex-start;
+}
+.estrela {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+.card > img {
+  width: 130px;
+  height: 115px;
+  object-fit: contain;
+  margin: auto;
+}
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 120px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.tudo {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    column-gap: 80px;
+    row-gap: 80px;
+    margin-top: 50px;
+}
+button{
+  margin-top: 2px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 4px;
+  display: block;
+  background-color: #9693935b;
+  border-radius: 5px;
+  font-size: 14px;
+}
+button:hover{
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.5s;
+}
+#meu-select{
+  color: var(--cor-terciária);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--cor-principal);
+  outline: none;
+  box-shadow: none;
+  padding: 4px 0;
+}
+.ordem{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+/*NÃO MEXER*/
+/* Container Principal do Header */
+.app-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  /* Tamanho fixo e blindado contra alterações externas */
+  width: 100%;
+  height: 86px;
+  min-height: 86px;
+  max-height: 86px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  background-color: #74e3af;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+}
+
+/* Isola todos os elementos internos de regras CSS globais da página */
+.app-header *,
+.app-header *::before,
+.app-header *::after {
+  box-sizing: border-box;
+}
+
+/* Botões de Ícone (Home e Carrinho) */
+.app-header__icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.app-header__icon-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* Barra de Pesquisa */
+.app-header__search {
+  flex: 1;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  margin: 0;
+  padding: 0 18px 0 24px;
+  background-color: rgba(255, 255, 255, 0.52);
+  border: 1px solid #1e2923;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header__search-input {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #2b3831;
+}
+
+.app-header__search-input::placeholder {
+  color: #617069;
+  opacity: 1;
+}
+
+.app-header__search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+/* Grupo da Direita (Carrinho + Avatar) */
+.app-header__actions {
+  background: transparent;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+/* Avatar Circular */
+.app-header__avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.app-header__avatar:hover {
+  transform: scale(1.05);
+}
