@@ -49,20 +49,22 @@
     <div class="container">
       <div class="filter">
         <h2>FILTROS</h2>
-        <button>MAIS POPULARES</button>
-        <button>MAIS VENDIDOS</button>
-        <button>MELHORES AVALIADOS</button>
+        <button id="populares">MAIS POPULARES</button>
+        <button id="vendidos">MAIS VENDIDOS</button>
+        <button id="avaliados">MELHORES AVALIADOS</button>
       </div>
       <div class="conteudo">
         <div class="ordem">
-          <label id="meu-select">Ordenado por:</label>
-          <select id="meu-select">
-            <option value="1">Preço</option>
-            <option value="2">A-Z</option>
-            <option value="3">Avaliação</option>
+          <label for="ordenar" id="meu-label">
+            Ordenado por:
+          </label>
+          <select id="ordenar">
+            <option value="preco">Preço</option>
+            <option value="nome">A-Z</option>
+            <option value="avaliacao">Avaliação</option>
           </select>
         </div>
-        <div class="tudo">
+        <div class="tudo" id="lista-produtos">
           <div class="card">
             <img src="imagens/Rectangle 41.png" alt="" />
             <h3>Grip de controle - pegada fechada</h3>
@@ -93,7 +95,7 @@
             <div class="avaliacao">
               <img class="estrela" src="imagens/Vector.png" alt="" />
               <p>4,6</p>
-            </div>
+            </div>      
             <p class="preço">R$65,00</p>
           </div>
           <div class="card">
@@ -104,6 +106,24 @@
               <p>4,7</p>
             </div>
             <p class="preço">R$85,00</p>
+          </div>
+          <div class="card">
+            <img src="imagens/Rectangle agora.png" alt="">
+            <h3>Dragão miniatura - figura decorativa</h3>
+            <div class="avaliacao">
+              <img class="estrela" src="imagens/Vector.png" alt="" />
+              <p>4,8</p>
+            </div>
+            <p class="preço">R$89,90</p>
+          </div>
+          <div class="card">
+            <img src="imagens/Rectangle 40.png" alt="">
+            <h3>Arte na parede-decoração moderna</h3>
+            <div class="avaliacao">
+              <img class="estrela" src="imagens/Vector.png" alt=""/>
+              <p>4,9</p>
+            </div>
+            <p class="preço">R$110,00</p>
           </div>
         </div>
       </div>
