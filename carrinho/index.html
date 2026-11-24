@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D: Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+
+        <a href="/" class="header-icon">
+            <img src="assets/home.png" alt="Página inicial">
+        </a>
+
+        <form class="header-search" action="../pesquisa/index.html" method="get">
+            <input type="text" name="q" placeholder="PESQUISAR" aria-label="Pesquisar">
+            <button type="submit" aria-label="Buscar">
+                <img src="assets/search.png" alt="" class="search-icon">
+            </button>
+        </form>
+
+        <div class="header-actions">
+            <a href="index.html" class="header-icon" aria-label="Carrinho">
+                <a href="/carrinho" class="header-icon">
+                    <img src="assets/cart.png" alt="Carrinho">
+                </a>
+            </a>
+
+            <a href="#" class="header-avatar" aria-label="Perfil do usuário">
+                <a href="/perfil" class="header-avatar">
+                    <img src="assets/user.png" alt="Perfil">
+                </a>
+            </a>
+        </div>
+
+    </header>
+
+    <main class="carrinho">
+
+        <section class="lista-produtos" aria-label="Produtos no carrinho">
+
+            <article class="produto">
+
+                <div class="produto-cabecalho">
+                    <span class="indicador"></span>
+                    <h2>DECORAÇÃO PARA QUARTO MINIMALISTA</h2>
+                    <button class="remover" type="button" aria-label="Remover produto">♜</button>
+                </div>
+
+                <div class="produto-conteudo">
+
+                    <div class="produto-imagem">
+                        <img class="produto-imagem" src="../pesquisa/imagens/Rectangle%2031.png"
+                            alt="Vaso decorativo minimalista">
+                    </div>
+
+                    <p class="produto-descricao">
+                        Vaso decorativo com design geométrico, ideal para complementar
+                        ambientes modernos e minimalistas.
+
+                    </p>
+
+                    <div class="quantidade">
+                        <button type="button">-</button>
+                        <span>1</span>
+                        <button type="button">+</button>
+                    </div>
+
+                    <strong class="preco">R$ 65,00</strong>
+
+                </div>
+
+                <div class="produto-entrega">
+                    <strong>Data prevista de entrega: 18 de agosto</strong>
+                    <small>Receba 10% de cashback em caso de atraso</small>
+                </div>
+
+            </article>
+
+            <article class="produto">
+
+                <div class="produto-cabecalho">
+                    <span class="indicador"></span>
+                    <h2>PEÇA INDUSTRIAL PARA LIGAS HIDRÁULICAS</h2>
+                    <button class="remover" type="button" aria-label="Remover produto">♜</button>
+                </div>
+
+                <div class="produto-conteudo">
+
+                    <div class="produto-imagem">
+                        <img class="produto-imagem" src="../pesquisa/imagens/Rectangle%2042.png"
+                            alt="Peça industrial para ligas hidráulicas">
+                    </div>
+
+                    <p class="produto-descricao">
+                        Peça industrial resistente, desenvolvida para aplicações
+                        em sistemas de ligas hidráulicas.
+                    </p>
+
+                    <div class="quantidade">
+                        <button type="button">-</button>
+                        <span>3</span>
+                        <button type="button">+</button>
+                    </div>
+
+                    <strong class="preco">R$ 85,00</strong>
+
+                </div>
+
+                <div class="produto-entrega">
+                    <strong>Data prevista de entrega: 21 de agosto</strong>
+                    <small>Receba 10% de cashback em caso de atraso</small>
+                </div>
+
+            </article>
+
+        </section>
+
+        <aside class="resumo">
+
+            <h2>FINALIZAR COMPRA</h2>
+
+            <div class="resumo-conteudo">
+
+                <h3>Revise seus produtos</h3>
+
+                <div class="resumo-produto">
+                    <span>Decoração para quarto minimalista</span>
+                    <span>R$ 65,00</span>
+                </div>
+
+                <div class="resumo-produto">
+                    <span>Peça industrial para ligas hidráulicas</span>
+                    <span>R$ 255,00</span>
+                </div>
+
+                <div class="resumo-total">
+                    <strong>TOTAL</strong>
+                    <strong>R$ 320,00</strong>
+                </div>
+
+                <a href="../checkout/index.html" class="checkout">
+                    IR AO CHECKOUT
+                </a>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
