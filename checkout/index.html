@@ -9,7 +9,7 @@
 <body>
     <header class="app-header">
         
-        <a href="/" class="app-header__icon-btn" aria-label="Início">
+        <a href="home/index.html" class="app-header__icon-btn" aria-label="Início">
             <img src="assets/home.png" alt="" width="38" height="38">
         </a>
         
@@ -39,6 +39,99 @@
 
         </div>
     </header>
+    
+
+    <main class="checkout-container">
+
+        <section class="checkout-products">
+
+            <div class="address-card">
+
+                <div class="address-title">
+                    <h3>ENDEREÇO: Cidade Nova, Rua Formosa - 123</h3>
+                    <p>Receba 10% de cashback em caso de atraso</p>
+                </div>
+
+                <div class="product">
+
+                    <img src="assets/produto1.png" alt="Decoração para quarto minimalista">
+
+                    <div class="product-info">
+                        <h4>Decoração para quarto minimalista</h4>
+                        <p>Quantidade: 1</p>
+                        <span>R$ 65,00</span>
+                    </div>
+
+                </div>
+
+                <div class="product">
+
+                    <img src="assets/produto2.png" alt="Peça industrial para ligas hidráulicas">
+
+                    <div class="product-info">
+                        <h4>Peça industrial para ligas hidráulicas</h4>
+                        <p>Quantidade: 3</p>
+                        <span>R$ 255,00</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="coupon">
+
+                <input
+                    type="text"
+                    placeholder="ADICIONAR CUPOM DE DESCONTO"
+                    aria-label="Cupom de desconto"
+                >
+
+                <button type="button">APLICAR</button>
+
+            </div>
+
+        </section>
+
+        <section class="checkout-payment">
+
+            <h3>Método de pagamento</h3>
+
+            <div class="payment-options">
+
+                <label class="payment-option selected">
+                    <input type="radio" name="payment" value="pix" checked>
+                    PIX
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="credito">
+                    Cartão de crédito
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="debito">
+                    Cartão de débito
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="boleto">
+                    Boleto
+                </label>
+
+            </div>
+
+            <button type="button" class="generate-qr">
+                GERAR QR CODE
+            </button>
+
+            <div class="qr-container">
+                <img src="assets/qr-code.png" alt="QR Code para pagamento via PIX">
+            </div>
+
+        </section>
+
+    </main>
+
 
 
 

@@ -129,3 +129,289 @@ body {
 .app-header__avatar:hover {
   transform: scale(1.05);
 }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f5e9;
+}
+
+/* Cabeçalho */
+
+.app-header {
+    height: 110px;
+    min-height: 110px;
+    max-height: 110px;
+    background-color: #82e5bd;
+    background-image: linear-gradient(
+        to bottom,
+        #82e5bd 55%,
+        #dff3df 100%
+    );
+    padding: 0 32px;
+}
+
+/* Esconde visualmente elementos que não aparecem no Figma,
+   sem removê-los do HTML */
+
+.app-header__search,
+.app-header__actions {
+    display: none;
+}
+
+/* Contato no lado direito */
+
+.app-header::after {
+    content: "CONTATO";
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+/* Área principal */
+
+.checkout-container {
+    width: 100%;
+    min-height: calc(100vh - 110px);
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    background: linear-gradient(
+        to bottom,
+        #e0f2df 0%,
+        #f7f5e9 15%,
+        #f7f5e9 85%,
+        #80e3bd 100%
+    );
+}
+
+/* Coluna esquerda */
+
+.checkout-products {
+    padding: 110px 40px 40px 55px;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Endereço e produtos */
+
+.address-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Endereço */
+
+.address-title {
+    padding: 13px 16px 10px;
+    border-bottom: 1px solid #dedede;
+}
+
+.address-title h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.address-title p {
+    margin: 4px 0 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Produtos */
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+}
+
+.product img {
+    width: 66px;
+    height: 66px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.product-info h4 {
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-info p {
+    margin: 0 0 3px;
+    font-size: 11px;
+}
+
+.product-info span {
+    font-size: 12px;
+    color: #65b99a;
+}
+
+/* Cupom */
+
+.coupon {
+    margin-top: 24px;
+    padding: 10px 14px;
+
+    background-color: #fff;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.coupon input {
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #dedede;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 11px;
+}
+
+.coupon input::placeholder {
+    color: #020101;
+}
+
+.coupon button {
+    border: none;
+    background-color: #dedede;
+    border-radius: 7px;
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Coluna direita */
+
+.checkout-payment {
+    padding: 110px 30px 40px;
+}
+
+/* Título do pagamento */
+
+.checkout-payment h3 {
+    font-size: 16px;
+    margin: 0 0 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #d8d5c9;
+}
+
+/* Opções de pagamento */
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #d8d5c9;
+}
+
+.payment-option {
+    display: inline-flex;
+    align-items: center;
+    background-color: #aaa;
+    color: #000;
+    border-radius: 7px;
+    padding: 4px 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.payment-option input {
+    display: none;
+}
+
+.payment-option.selected {
+    background-color: #80e3bd;
+}
+
+/* Botão QR Code */
+
+.generate-qr {
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 9px;
+
+    background-color: #80e3bd;
+    color: #000;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Imagem QR Code */
+
+.qr-container {
+    width: 100%;
+    max-width: 335px;
+    aspect-ratio: 1 / 1;
+
+    margin: 36px auto 0;
+    padding: 12px;
+
+    background-color: #fff;
+    border: 9px solid #80e3bd;
+    border-radius: 28px;
+}
+
+.qr-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-products {
+        padding: 45px 20px;
+        border-right: none;
+    }
+
+    .checkout-payment {
+        padding: 30px 20px 60px;
+        border-top: 1px solid #ddd;
+    }
+
+    .app-header {
+        padding: 0 20px;
+    }
+
+    .qr-container {
+        max-width: 280px;
+    }
+
+}
+/* Efeito ao clicar nos botões */
+.coupon button:active,
+.generate-qr:active {
+    filter: brightness(0.90);
+}
